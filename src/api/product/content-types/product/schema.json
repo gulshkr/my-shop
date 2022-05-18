@@ -4,18 +4,70 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "Product"
+    "displayName": "Product",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "title": {
       "type": "string",
       "maxLength": 71,
       "required": true,
       "minLength": 3
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "minLength": 3,
+      "maxLength": 110
+    },
+    "Description": {
+      "type": "text",
+      "required": false
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "T-shirts",
+        "mug",
+        "hoody",
+        "stickers"
+      ],
+      "default": "T-shirts",
+      "required": true
+    },
+    "Size": {
+      "type": "string",
+      "maxLength": 70
+    },
+    "Color": {
+      "type": "enumeration",
+      "enum": [
+        "Red",
+        "Blue",
+        " Green",
+        "White"
+      ],
+      "required": true
+    },
+    "Price": {
+      "type": "integer",
+      "required": true
+    },
+    "availabilityQty": {
+      "type": "integer",
+      "required": true
     }
   }
 }
