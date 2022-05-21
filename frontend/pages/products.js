@@ -3,6 +3,7 @@ import React from 'react'
 
 const Products = (props) => {
   return (
+<<<<<<< HEAD
     <div className='container mx-auto px-4'>
       <section className="text-gray-600 body-font">
   <div className="container px-5 md:py-24 mx-auto">
@@ -32,6 +33,9 @@ const Products = (props) => {
   </div>
 </section>
     </div>
+=======
+    <div className='container mx-auto px-4'>Products</div>
+>>>>>>> 8cbe2ddb24fbc2156771ff414cf7af3347b67c27
   )
 }
 
